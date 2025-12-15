@@ -2,12 +2,12 @@
 -- + Tabs
 -- + Resizing windows
 -- + Moving with find
--- * Complinig auto?
 -- * Folder/repo/workplace support
 -- * SSH support
 -- * Navigate folders
 -- * Git support
 -- * aut ocomment
+-- * Complinig auto?
 -- * find+replace
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -124,5 +124,24 @@ require('lazy').setup(plugins, {
   },
 })
 
+require('neo-tree').setup {
+  source_selector = {
+    winbar = true,
+    statusline = true,
+  },
+  window = {
+    mappings = {
+      ['P'] = {
+        'toggle_preview',
+        config = {
+          --use_float = false,
+          -- use_image_nvim = true,
+          use_snacks_image = true,
+          -- title = 'Neo-tree Preview',
+        },
+      },
+    },
+  },
+}
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
