@@ -2,7 +2,8 @@
 -- + Tabs
 -- + Resizing windows
 -- + Moving with find
--- * Folder/repo/workplace support
+-- + Folder/repo/workplace support
+-- + Session auto save and restore
 -- * SSH support
 -- * Navigate folders
 -- * Git support
