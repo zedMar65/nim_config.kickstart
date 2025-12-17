@@ -208,11 +208,10 @@ return {
         capabilities = {},
         settings = {},
       },
-      pyrefly = {
+      pylsp = {
         -- cmd = { ... },
         filetypes = { 'python' },
         capabilities = {},
-        settings = {},
       },
 
       lua_ls = {
