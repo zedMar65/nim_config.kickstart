@@ -8,7 +8,7 @@ return --{}
     lint.linters_by_ft = {
       python = { 'flake8' },
       make = { 'mbake' },
-      cmake = { 'cmakelang' },
+      cmake = { 'cmakelint' },
       c = { 'cppcheck' },
       cpp = { 'cppcheck' },
       lua = { 'luacheck' },
@@ -25,7 +25,7 @@ return --{}
       return false
     end
 
-    vim.api.nvim_create_autocmd({ 'LspAttach', 'BufWritePost', 'InsertLeave' }, {
+    vim.api.nvim_create_autocmd({ 'BufReadPost', 'BufWritePost', 'InsertLeave' }, {
       callback = function(args)
         local bufnr = args.buf
 

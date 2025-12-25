@@ -213,6 +213,11 @@ return {
         filetypes = { 'python' },
         capabilities = {},
       },
+      asm_lsp = {
+        cmd = { 'asm-lsp', '--target', 'nasm' },
+        filetypes = { 'asm' },
+        capabilities = {},
+      },
 
       lua_ls = {
         -- cmd = { ... },
