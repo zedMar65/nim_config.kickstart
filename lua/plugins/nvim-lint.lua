@@ -8,7 +8,7 @@ return --{}
     lint.linters_by_ft = {
       python = { 'flake8' },
       make = { 'mbake' },
-      cmake = { 'cmakelint' },
+      cmake = { 'cmake_lint' },
       c = { 'cppcheck' },
       cpp = { 'cppcheck' },
       lua = { 'luacheck' },
